@@ -1,13 +1,13 @@
 i{
     font-size: 10em;
     padding: 0.25em;
-    color: slateblue;
+    color: #009900;
 }
 
 button {
     margin:0 auto;
     display:block;
-    background-color: slateblue;
+    background-color: #009900;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 50px;
@@ -32,7 +32,7 @@ table{
 }
 
 th{
-    background-color: slateblue;
+    background-color:#009900;
     color: white;
     font-size: 20px;
     border-radius: 2px;

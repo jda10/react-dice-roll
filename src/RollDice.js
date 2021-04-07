@@ -12,6 +12,7 @@ class RollDice extends Component{
         super(props);
         this.state = {die1 : "one" , die2: "one", rolling : false, hasResults : false}
         this.roll = this.roll.bind(this);
+        this.clearResults = this.clearResults.bind(this);
     }
 
     roll(){
@@ -25,9 +26,10 @@ class RollDice extends Component{
     }
 
     clearResults(){
-        this.props.rolls = [];
+        this.props.rolls.splice(0, this.props.rolls.length);
         this.setState({hasResults : false});
     }
+
 
     render(){
         return(
@@ -36,6 +38,9 @@ class RollDice extends Component{
                 <Die face={this.state.die2}></Die>
                 <button onClick={this.roll} disabled={this.state.rolling}>
                     {this.state.rolling ? "Rolling..." : "Roll Dice"}
+                </button>
+                <button onClick={this.clearResults} disabled={!this.state.hasResults}>
+                    Clear Results
                 </button>
                 <div hidden={!this.state.hasResults}>
                     <h3>Roll Results</h3>
