@@ -22,7 +22,7 @@ class RollDice extends Component{
         this.setState({die1: newDie1, die2: newDie2, rolling: true, hasResults: true});
         setTimeout(() => {
             this.setState({rolling: false});
-        },1000);
+        },400);
     }
 
     clearResults(){
