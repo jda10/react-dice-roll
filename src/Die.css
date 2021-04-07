@@ -1,0 +1,22 @@
+i{
+    font-size: 10em;
+    padding: 0.25em;
+    color: slateblue;
+}
+
+button {
+    margin:0 auto;
+    display:block;
+    background-color: slateblue;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 50px;
+    width: 100px;
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+button:hover{
+    background-color: lightslategray;
+    color: white;
+}
